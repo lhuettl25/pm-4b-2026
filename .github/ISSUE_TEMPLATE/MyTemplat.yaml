@@ -1,0 +1,25 @@
+name: Bug Report
+description: Fehler in unserem Projekt melden
+title: "[Bug]: "
+ 
+body:
+  - type: dropdown
+    id: fehlerart
+    attributes:
+      label: Welche Art von Fehler?
+      options:
+        - Demo-Datei unvollständig
+        - Datei fehlt
+        - Falscher Inhalt
+        - Sonstiger Fehler
+    validations:
+      required: true
+ 
+  - type: textarea
+    id: beschreibung
+    attributes:
+      label: Fehlerbeschreibung
+      description: Beschreibe den Fehler genauer.
+      placeholder: Was funktioniert nicht?
+    validations:
+      required: true
